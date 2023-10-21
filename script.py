@@ -1,4 +1,4 @@
-import codecademylib3_seaborn
+# import codecademylib3_seaborn
 import matplotlib.pyplot as plt
 import numpy as np 
 
@@ -32,7 +32,7 @@ for name, label in [('Robots', 0),
 
 # Reorder the labels to have colors matching the cluster results
 
-y = np.choose(y, [1, 2, 0]).astype(np.float)
+y = np.choose(y, [1, 2, 0]).astype(float)
 ax.scatter(x[:, 3], x[:, 0], x[:, 2], c=y, edgecolor='k')
 
 ax.w_xaxis.set_ticklabels([])
